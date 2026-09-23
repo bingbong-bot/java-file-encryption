@@ -2,7 +2,7 @@
 
 An enterprise-grade desktop application for secure file encryption and access control management. Built with JavaFX GUI, AES-256 encryption, role-based access control (RBAC), and comprehensive audit logging.
 
-## ✨ Key Features
+## Key Features
 
 - **AES-256 Encryption Engine**: Military-grade symmetric encryption for files and sensitive data
 - **Role-Based Access Control (RBAC)**: Admin, User, and Viewer roles with granular permission management
@@ -11,7 +11,7 @@ An enterprise-grade desktop application for secure file encryption and access co
 - **JavaFX Desktop UI**: Modern, responsive user interface for file management
 - **Production-Ready Security**: Implements industry best practices for cryptography and access control
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 java-file-encryption/
@@ -32,7 +32,7 @@ java-file-encryption/
 └── SETUP.md
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -45,7 +45,7 @@ java-file-encryption/
 | **Logging** | SLF4J + Logback |
 | **Testing** | JUnit 4, Mockito |
 
-## 📦 Requirements
+## Requirements
 
 - **Java Development Kit (JDK)**: Version 11 or higher
 - **Maven**: Version 3.6 or higher
@@ -53,7 +53,7 @@ java-file-encryption/
 - **Memory**: Minimum 512 MB RAM
 - **Disk Space**: 200 MB for installation
 
-## 🚀 Quick Start
+## Quick Start
 
 See [SETUP.md](./SETUP.md) for detailed installation instructions.
 
@@ -67,7 +67,7 @@ mvn clean package
 java -jar target/java-file-encryption-1.0.0.jar
 ```
 
-## 🔐 Security Features
+## Security Features
 
 ### Encryption
 - **Algorithm**: AES (Advanced Encryption Standard)
@@ -92,7 +92,7 @@ java -jar target/java-file-encryption-1.0.0.jar
 - Timestamps and user identification for compliance
 - SQLite database for persistence
 
-## 📊 Supported Operations
+## Supported Operations
 
 - **File Encryption**: Encrypt files up to several GB
 - **File Decryption**: Recover original files with valid key
@@ -100,7 +100,7 @@ java -jar target/java-file-encryption-1.0.0.jar
 - **Access Control**: Define and enforce role-based permissions
 - **Audit Review**: Query audit logs by user or action
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -120,7 +120,7 @@ mvn test jacoco:report
 - **CredentialManager**: 11 tests for user management
 - **Total**: 26+ unit tests
 
-## 📝 Configuration
+## Configuration
 
 ### Database Configuration
 
@@ -130,7 +130,7 @@ By default, audit logs are stored in `./audit.db`. Modify the path in your appli
 
 Edit `src/main/resources/logback.xml` to customize logging levels and output.
 
-## 🔧 Usage Examples
+## Usage Examples
 
 ### Encrypt a File
 
@@ -156,11 +156,11 @@ AuditLogger auditLog = new AuditLogger("./audit.db");
 auditLog.logFileEncryption("john", "/path/to/file", fileSize, "SUCCESS");
 ```
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details
 
-## 🤝 Security Best Practices
+## Security Best Practices
 
 1. **Key Management**: Store encryption keys securely (e.g., hardware security modules)
 2. **Password Policy**: Enforce strong passwords (minimum 12 characters, mixed case, special chars)
@@ -169,7 +169,7 @@ MIT License - see LICENSE file for details
 5. **Backup Strategy**: Keep encrypted backups in secure locations
 6. **Update Dependencies**: Keep Java and libraries up-to-date
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Locked Error
 Delete the `audit.db` file and restart the application.
@@ -180,7 +180,7 @@ Ensure JavaFX SDK is in your Maven dependencies (already configured in pom.xml).
 ### Argon2 Library Issues
 Run `mvn dependency:resolve` to verify all dependencies are downloaded.
 
-## 📞 Support
+## Support
 
 For issues or questions, refer to the test files for usage examples or review the JavaDoc comments in source code.
 
